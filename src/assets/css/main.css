@@ -2,7 +2,7 @@
 @import url("../icons/icomoon/style.css");
 @import "./styles/variables.css";
 @import "./styles/typography.css";
-@import "./sidebar.css";
+@import "./components";
 
 *,
 *::before,
@@ -10,10 +10,9 @@
     box-sizing: border-box;
     margin: 0;
     font-weight: normal;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    color: var(--gray-400);
 }
-*,body{
+body{
     font-size: 16px;
     font-weight:400;
     line-height: 20px;
@@ -25,6 +24,15 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .tt-main{
@@ -48,4 +56,10 @@
 .tt-main__inner{
     width: 100%;
     padding-left: 248px;
+}
+
+.tt-wrapper{
+    width: 100%;
+    height: auto;
+    padding: 16px 32px;
 }
