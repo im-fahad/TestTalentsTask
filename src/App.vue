@@ -15,13 +15,13 @@ import HelloWorld from './components/HelloWorld.vue'
           <li class="tt-sidebar__menu-item">
             <a href="/overview" class="tt-sidebar__menu-item-link">
               <span class="icon icon-Home tt-sidebar__menu-item-icon"></span>
-              <span class="tt-sidebar__menu-item-label">Overview</span>
+              <span class="tt-sidebar__menu-item-label text-xxs">Overview</span>
             </a>
           </li>
           <li class="tt-sidebar__menu-item">
-            <a href="/overview" class="tt-sidebar__menu-item-link">
-              <span class="icon icon-Plans--Billings tt-sidebar__menu-item-icon"></span>
-              <span class="tt-sidebar__menu-item-label">Plans & Billings</span>
+            <a href="/overview" class="tt-sidebar__menu-item-link active">
+              <div class="icon icon-Plans--Billings tt-sidebar__menu-item-icon"></div>
+              <div class="tt-sidebar__menu-item-label text-xxs">Plans & Billings</div>
             </a>
           </li>
         </ul>
