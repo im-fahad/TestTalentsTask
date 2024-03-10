@@ -1,0 +1,99 @@
+:root{
+    --white:#FFFFFF;
+    /*green*/
+    --green-50:#F1F9F8;
+    --green-100:#E1F2EF;
+    --green-200:#DEF9F4;
+    --green-300:#BBF3E8;
+    --green-400:#23D7B6;
+    --green-500:#20C2A4;
+    --green-600:#12A188;
+
+    /*gray*/
+    --gray-50:#FCFCFC;
+    --gray-100:#F2F5F5;
+    --gray-200:#DADFE1;
+    --gray-300:#B5BEC1;
+    --gray-400:#929FA6;
+    --gray-500:#3E545E;
+    --gray-600:#1E4354;
+
+    /*Success*/
+    --success-50:#ECFDF5;
+    --success-100:#D1FAE5;
+    --success-200:#A7F3D0;
+    --success-300:#6EE7B7;
+    --success-400:#34D399;
+    --success-500:#10B981;
+    --success-600:#059669;
+
+    /*Info*/
+    --info-50:#EFF6FF;
+    --info-100:#DBEAFE;
+    --info-200:#BFDBFE;
+    --info-300:#93C5FD;
+    --info-400:#60A5FA;
+    --info-500:#3B82F6;
+    --info-600:#2563EB;
+
+    /*Warning*/
+    --warning-50:#FFFBEB;
+    --warning-100:#FEF3C7;
+    --warning-200:#FDE68A;
+    --warning-300:#FCD34D;
+    --warning-400:#FBBF24;
+    --warning-500:#F59E0B;
+    --warning-600:#D97706;
+
+    /*Error*/
+    --error-50:#FEF2F2;
+    --error-100:#FEE2E2;
+    --error-200:#FECACA;
+    --error-300:#FCA5A5;
+    --error-400:#F87171;
+    --error-500:#EF4444;
+    --error-600:#DC2626;
+
+    /*Typography*/
+    --text-2xl:{
+        font-size: 65px;
+        line-height: 64px;
+        font-weight: bold;
+    };
+    --text-xl:{
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 500;
+    };
+    --text-lg:{
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 500;
+    };
+    --text-md:{
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 500;
+    };
+    --text-sm:{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 500;
+    };
+    --text-xs:{
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+    };
+    --text-xxs:{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+    };
+}
+
+:root{
+    --bg-gray:var(--gray-100);
+    --bg-white:var(--white);
+    --shadow:0 7px 30px 0 #5A727B1F;
+}
