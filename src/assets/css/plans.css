@@ -312,3 +312,29 @@
 .active .plan__label{
     color: var(--white);
 }
+
+.compares{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 64px;
+    gap:16px
+}
+.compares-tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.compares-tab__item{
+    padding: 9px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gray-600);
+}
+.compares-tab__item.active{
+    background-color: var(--green-600);
+    color: var(--white);
+}

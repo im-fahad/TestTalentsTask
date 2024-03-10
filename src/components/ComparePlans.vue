@@ -2,6 +2,18 @@
 import { ref } from 'vue'
 
 const currentPlan = ref('Premium')
+const activeCurrency = ref('BDT')
+const activeDuration = ref('Monthly')
+
+const currencies = ['BDT', 'USD']
+const durations = ['Monthly', 'Yearly']
+
+const updateDuration = (duration: string) => {
+  activeDuration.value = duration
+}
+const updateCurrency = (currency: string) => {
+  activeCurrency.value = currency
+}
 
 const plans = [
   {
@@ -62,6 +74,30 @@ const plans = [
       <p class="compare-plans__desc text-xxs">
         We’ll credit your account if you need to downgrade during the billing cycle.
       </p>
+    </div>
+
+    <div class="compares">
+      <div class="compares-tab">
+        <button
+          v-for="(currency, key) in currencies"
+          :key="key"
+          :class="activeCurrency === currency ? 'active' : ''"
+          class="compares-tab__item"
+          v-text="currency"
+          @click="() => updateCurrency(currency)"
+        />
+      </div>
+
+      <div class="compares-tab">
+        <button
+          v-for="(duration, key) in durations"
+          :key="key"
+          :class="activeDuration === duration ? 'active' : ''"
+          class="compares-tab__item"
+          v-text="duration"
+          @click="() => updateDuration(duration)"
+        />
+      </div>
     </div>
 
     <div class="plans">
