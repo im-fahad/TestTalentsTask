@@ -36,13 +36,13 @@
 }
 
 .tt-sidebar__menu-item-link:hover,
-.tt-sidebar__menu-item-link.active{
+.tt-sidebar__menu-item-link.router-link-active{
     background-color: var(--green-100);
 }
 
 .tt-sidebar__menu-item-link:hover > .tt-sidebar__menu-item-icon:before,
 .tt-sidebar__menu-item-link:hover > .tt-sidebar__menu-item-label,
-.active .tt-sidebar__menu-item-icon:before,
-.active .tt-sidebar__menu-item-label{
+.router-link-active .tt-sidebar__menu-item-icon:before,
+.router-link-active .tt-sidebar__menu-item-label{
     color: var(--green-600);
 }
